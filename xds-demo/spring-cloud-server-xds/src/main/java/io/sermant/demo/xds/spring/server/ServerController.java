@@ -24,13 +24,13 @@ import java.net.InetAddress;
 import java.net.UnknownHostException;
 
 /**
- * RouterServerController
+ * ServerController
  *
  * @author daizhenyu
  * @since 2024-10-11
  **/
 @RestController
-public class RouterServerController {
+public class ServerController {
     private static final int ITERATION_COUNT = 15000;
 
     @Value("${SERVER_VERSION:v1}")

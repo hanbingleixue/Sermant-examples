@@ -3,7 +3,7 @@
         xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
         xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
     <parent>
-        <artifactId>xds-router-demo</artifactId>
+        <artifactId>xds-demo</artifactId>
         <groupId>com.huaweicloud.sermant.examples</groupId>
         <version>1.0.0</version>
     </parent>
@@ -64,7 +64,7 @@
                 <configuration>
                     <mainClass>io.sermant.demo.xds.spring.client.SpringCloudClientApplication</mainClass>
                     <finalName>spring-client</finalName>
-                    <outputDirectory>${pom.basedir}/../router-product/spring-client</outputDirectory>
+                    <outputDirectory>${pom.basedir}/../product/spring-client</outputDirectory>
                 </configuration>
                 <executions>
                     <execution>
@@ -89,7 +89,7 @@
                         <configuration>
                             <filesets>
                                 <fileset>
-                                    <directory>${pom.basedir}/../router-product/spring-client</directory>
+                                    <directory>${pom.basedir}/../product/spring-client</directory>
                                     <includes>
                                         <include>spring-client.jar</include>
                                     </includes>

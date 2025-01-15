@@ -60,14 +60,14 @@ import java.util.concurrent.Future;
 import java.util.concurrent.TimeUnit;
 
 /**
- * SpringRouterController
+ * SpringController
  *
  * @author daizhenyu
  * @since 2024-09-23
  **/
 @RequestMapping("router")
 @RestController
-public class SpringRouterController implements InitializingBean {
+public class SpringClientController implements InitializingBean {
     private static final String VERSION = "version";
 
     private static final int SUCCEED_CODE = 200;
@@ -168,7 +168,7 @@ public class SpringRouterController implements InitializingBean {
                 mockRealLogic();
                 return result;
             } else {
-                return "";
+                return EntityUtils.toString(response.getEntity());
             }
         } catch (IOException e) {
             return "";
